@@ -1,7 +1,7 @@
 # svelte-stars-rating
 ## A Highly Customizable, easy-to-use elegant stars rating component
 ![MIT License](https://badgen.net/badge/license/MIT/blue "MIT License")
-[![view on npm](http://img.shields.io/npm/v/vue-dynamic-star-rating.svg?colorB=red)](https://www.npmjs.com/package/svelte-stars-rating)
+[![view on npm](http://img.shields.io/npm/v/svelte-stars-rating.svg?colorB=red)](https://www.npmjs.com/package/svelte-stars-rating)
 
 ###### Demo
 
