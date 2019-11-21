@@ -27,6 +27,50 @@ You can then use the following selector anywhere in your project:
 ```html
 <star-rating></star-rating>
 ```
+
+## Basics
+
+| Property | Type  | Description | Default
+| --- | ---  | --- | --- |
+| **rating** | Number  | A number between 0.0-5.0 that will determine the fullness of the 5-stars rating polygons | 1 |
+| **isIndicatorActive** | Boolean | A property that deteremines weather a rating indicator would show to the right | true |
+
+## Customized Styling
+
+| Property | Type  | Description | Default |
+| --- | ---  | --- | --- |
+| **fullStarColor** | string | Set the full or partially-full star color | ```#ffd219``` |
+| **emptyStarColor** | string | Set the empty or partially-empty star color | ```#737373``` |
+| **styleStarWidth** | number | Set the star width | 20 |
+
+## Implementation Example
+Define your **config** options object in the component importing StarRating e.g
+```js
+const app = new App({
+  target: document.body,
+  props: {
+    name: "svelte-stars-rating",
+    rating: 4.7,
+    isIndicatorActive: false,
+    style: {
+      styleStarWidth: 85,
+      styleEmptyStarColor: "#737373",
+      styleFullStarColor: "#ffd219"
+    }
+  }
+})
+```
+or
+```js
+let style = {
+   styleStarWidth: 85,
+   styleEmptyStarColor: "#737373",
+   styleFullStarColor: "#ffd219"
+}
+```
+```html
+<star-rating rating="4.7" style={style]></star-rating>
+```
 Feedback would be much appreciated, questions, suggestions, issues are more than welcome.
 
 ---
