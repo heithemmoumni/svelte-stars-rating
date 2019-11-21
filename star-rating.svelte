@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  
+
   export let rating = 0;
   export let isIndicatorActive = true;
   export let style = {
@@ -59,6 +59,7 @@
       });
     }
   }
+
   function calcStarFullness(starData) {
     let starFullnessPercent = starData.raw * 100 + "%";
     return starFullnessPercent;
@@ -87,7 +88,6 @@
       : style.styleEmptyStarColor;
   }
 
-  let starStyle = {};
   onMount(() => {
     initStars();
     setStars();
