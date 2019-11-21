@@ -1,22 +1,24 @@
 <script>
   import { onMount } from "svelte";
+  
   export let rating = 0;
   export let isIndicatorActive = true;
+  export let style = {
+    styleStarWidth: 50,
+    styleEmptyStarColor: "#737373",
+    styleFullStarColor: "#ffd219"
+  };
 
   let emptyStar = 0;
   let fullStar = 1;
   let totalStars = 5;
-  export let styleStarWidth = 50;
-  export let styleEmptyStarColor = "#737373";
-  export let styleFullStarColor = "#ffd219";
-
   let stars = [];
 
   function getStarPoints() {
-    let centerX = styleStarWidth / 2;
-    let centerY = styleStarWidth / 2;
+    let centerX = style.styleStarWidth / 2;
+    let centerY = style.styleStarWidth / 2;
     let innerCircleArms = 5; // a 5 arms star
-    let innerRadius = styleStarWidth / innerCircleArms;
+    let innerRadius = style.styleStarWidth / innerCircleArms;
     let innerOuterRadiusRatio = 2.5; // Unique value - determines fatness/sharpness of star
     let outerRadius = innerRadius * innerOuterRadiusRatio;
     return calcStarPoints(
@@ -81,8 +83,8 @@
 
   function getFullFillColor(starData) {
     return starData.raw !== emptyStar
-      ? styleFullStarColor
-      : styleEmptyStarColor;
+      ? style.styleFullStarColor
+      : style.styleEmptyStarColor;
   }
 
   let starStyle = {};
@@ -117,7 +119,8 @@
     {#each stars as star}
       <svg
         class="star-svg"
-        style="fill: url(#gradient{star.raw});height:{styleStarWidth}; width:{styleStarWidth}">
+        style="fill: url(#gradient{star.raw});height:{style.styleStarWidth};
+        width:{style.styleStarWidth}">
         <polygon points={getStarPoints()} style="fill-rule:nonzero;" />
         <defs>
           <linearGradient id="gradient{star.raw}">
@@ -135,12 +138,12 @@
               id="stop3"
               offset={star.percent}
               stop-opacity="1"
-              stop-color={styleEmptyStarColor} />
+              stop-color={style.styleEmptyStarColor} />
             <stop
               id="stop4"
               offset="100%"
               stop-opacity="1"
-              :stop-color={styleEmptyStarColor} />
+              :stop-color={style.styleEmptyStarColor} />
           </linearGradient>
         </defs>
       </svg>
