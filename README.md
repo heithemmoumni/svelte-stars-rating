@@ -1,7 +1,7 @@
 # svelte-stars-rating
 ## A Highly Customizable, easy-to-use elegant stars rating component
 ![MIT License](https://badgen.net/badge/license/MIT/blue "MIT License")
-[![view on npm](http://img.shields.io/npm/v/vue-dynamic-star-rating.svg?colorB=red)]()
+[![view on npm](http://img.shields.io/npm/v/vue-dynamic-star-rating.svg?colorB=red)](https://www.npmjs.com/package/svelte-stars-rating)
 
 ###### Demo
 
@@ -10,15 +10,15 @@
 [![Edit Vue Template](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/lively-https-ym9tj)
 
 # Usage
-Install via NPM ```npm i svelte-star-rating```
+Install via NPM ```npm i svelte-stars-rating```
 
 Then require in your project:
 ```js
-var StarRating = require('svelte-star-rating');
+var StarRating = require('svelte-stars-rating');
 ```
 or ES6 syntax:
 ```js
-import StarRating from 'svelte-star-rating'
+import StarRating from 'svelte-stars-rating'
 ```
 
 
