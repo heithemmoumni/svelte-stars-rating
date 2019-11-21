@@ -1,0 +1,26 @@
+{
+  "name": "svelte-stars-rating",
+  "version": "1.0.0",
+  "description": "A Highly Customizable, easy-to-use elegant stars rating component",
+  "main": "star-rating.svelte",
+  "peerDependencies": {
+    "svelte": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heithemmoumni/svelte-stars-rating.git"
+  },
+  "keywords": [
+    "sveltejs",
+    "rating",
+    "web",
+    "star-rating",
+    "svelte"
+  ],
+  "author": "Heithem Moumni <moumniheithem@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heithemmoumni/svelte-stars-rating/issues"
+  },
+  "homepage": "https://github.com/heithemmoumni/svelte-stars-rating#readme"
+}
