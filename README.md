@@ -5,7 +5,7 @@
 
 ###### Demo
 
-![4.6 Star Rating](https://github.com/heithemmoumni/svelte-stars-rating/blob/master/rating.png "3.6 Rating Stars")
+![4.6 Star Rating](https://raw.githubusercontent.com/heithemmoumni/svelte-stars-rating/master/rating.png "3.6 Rating Stars")
 
 [![Edit Vue Template](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/lively-https-ym9tj)
 
