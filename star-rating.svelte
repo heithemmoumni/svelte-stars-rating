@@ -106,9 +106,6 @@
   .star-container {
     display: flex;
   }
-  .indicator {
-    font-size: 2.5rem;
-  }
   .star-container:not(:last-child) {
     margin-right: 5px;
   }
@@ -143,13 +140,13 @@
               id="stop4"
               offset="100%"
               stop-opacity="1"
-              :stop-color={style.styleEmptyStarColor} />
+              stop-color={style.styleEmptyStarColor} />
           </linearGradient>
         </defs>
       </svg>
     {/each}
     {#if isIndicatorActive}
-      <div class="indicator">{rating}</div>
+      <div class="indicator" style="font-size: {style.indicatorFontSize || '2.5rem'};">{rating}</div>
     {/if}
   </div>
 </div>
