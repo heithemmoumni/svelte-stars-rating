@@ -69,7 +69,7 @@ let style = {
 }
 ```
 ```html
-<star-rating rating="4.7" style={style]></star-rating>
+<star-rating rating="4.7" {style}></star-rating>
 ```
 Feedback would be much appreciated, questions, suggestions, issues are more than welcome.
 
