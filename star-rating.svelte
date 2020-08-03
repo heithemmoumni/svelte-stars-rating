@@ -99,10 +99,6 @@
     display: flex;
     align-items: center;
   }
-  .star-rating {
-    display: flex;
-    align-items: center;
-  }
   .star-container {
     display: flex;
   }
