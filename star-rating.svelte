@@ -112,8 +112,7 @@
     {#each stars as star}
       <svg
         class="star-svg"
-        style="fill: url(#gradient{star.raw});height:{style.styleStarWidth};
-        width:{style.styleStarWidth}">
+        style="fill: url(#gradient{star.raw}); height:{style.styleStarWidth}px; width:{style.styleStarWidth}px">
         <polygon points={getStarPoints()} style="fill-rule:nonzero;" />
         <defs>
           <linearGradient id="gradient{star.raw}">
